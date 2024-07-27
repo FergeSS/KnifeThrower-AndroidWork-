@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_gradient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:scaleType="centerCrop"
+            android:layout_height="75dp"
+            android:src="@drawable/table"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife1"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife2"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife3"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife4"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife5"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife6"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/knife7"
+            android:layout_width="19dp"
+            android:layout_height="71dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/knife"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/gameCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.37">
+
+                <ImageView
+                    android:id="@+id/backk"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:src="@drawable/cheese"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/count"
+            android:layout_width="242dp"
+            android:layout_height="128dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/knifes_7"/>
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:onClick="back"
+            android:background="@drawable/home_sel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
