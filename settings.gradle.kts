@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Knife Thrower"
 include(":app")
- 
